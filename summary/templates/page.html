@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aboutus</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+  </head>
+  <body>
+    <div class="flex flex-wrap justify-center">
+      <img
+        src="{{url_for('static',filename='images/poster.jpg')}}"
+        class="max-w-md mb-4 mr-4"
+      />
+      <div class="w-full md:w-1/2 xl:w-2/3 p-6">
+        <div class="outline-black rounded-lg bg-red-200 px-8 h-180">
+          <h2 class="text-3xl text-black-300 font-bold text-center">
+            About CodeCraft!
+          </h2>
+          <p class="italic font-serif text-xl">
+            This is a Technical Event on mastering flask organised by AI
+            students under the guidance of the faculties. This was a 3 day event
+            conducted from July 22(Monday) to July 24(Wednesday).First day was
+            quiz round also qualifying round which was conducted in three
+            batches and students were shortlisted for second round Mastering
+            Flask. 65 students out of 98 were shortlisted and they were divided
+            into teams and worked on creating a website with it's basics
+            attended the workshop on website creation on the next two days!.
+          </p>
+          <div class="flex flex-row justify-between">
+            <div class="flex flex-col justify-items-left">
+              <h4 class="underline font-bold">Faculty Co-ordinators</h4>
+              <p>Dr.Minu Jacob,Asooc.Prof/CSE</p>
+              <p>Ms.Lakshmi,Asst.Prof/CSE</p>
+              <p>Dr.Usama Abdur Rahman,Asooc.Prof/CSE</p>
+              <p>Dr.Sathya Bama Krishna,Asooc.Prof/CSE</p>
+              <p>Ms.Bala Sai Gayathi,Asst.Prof/CSE</p>
+            </div>
+            <div class="flex flex-col justify-items-right">
+              <h4 class="underline font-bold">Student Co-ordinators</h4>
+              <p>Mr.Deepan S V,II-CSE AI</p>
+              <p>Mr.Shreemaan,II-CSE AI</p>
+              <p>Mr.Sayed,II-CSE AI</p>
+              <p>Ms.Madhumitha,II-CSE AI</p>
+              <p>Ms.Ranusha,II-CSE AI</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col">
+          <button
+            class="bg-pink-800 text-white px-5 py-3 rounded-lg inline-block mb-2"
+            onclick="location.href='/day'"
+          >
+            DAY1
+          </button>
+          <button
+            class="bg-pink-800 text-white px-5 py-3 rounded-lg inline-block mb-2"
+            onclick="location.href='/dayy'"
+          >
+            DAY2
+          </button>
+          <button
+            class="bg-pink-800 text-white px-5 py-3 rounded-lg inline-block"
+            onclick="location.href='/dayyy'"
+          >
+            DAY3
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

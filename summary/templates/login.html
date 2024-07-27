@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+  </head>
+  <body>
+    <div class="flex items-center justify-center min-h-screen">
+      <video
+        autoplay
+        loop
+        muted
+        playsinline
+        class="absolute top-0 left-0 w-full h-full object-cover"
+      >
+        <source
+          src="{{ url_for('static', filename='images/' + video_filename) }}"
+          type="video/mp4"
+        />
+      </video>
+      <div class="absolute top-24 left-8 p-12 w-1/2 rounded-lg">
+        <div class="my-4">
+          <p class="text-2xl font-bold text-center text-white">LOGIN</p>
+          <form action="/aboutus" class="my-5 flex flex-col space-y-5">
+            <div class="flex flex-col">
+              <label for="username" class="text-xl text-white">Username</label>
+              <input
+                type="text"
+                id="username"
+                name="username"
+                class="border-solid border-2 border-gray-300 rounded-lg px-3 h-10"
+                placeholder="Enter Your Username"
+                required
+              />
+            </div>
+            <div class="flex flex-col">
+              <label for="password" class="text-xl text-white">Password</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                class="border-solid border-2 border-gray-300 rounded-lg px-3 h-10"
+                placeholder="*******"
+                required
+              />
+            </div>
+            <div class="flex justify-center">
+              <button
+                class="bg-blue-500 text-white px-5 py-3 rounded-lg"
+                href="#"
+                onclick="location.href='/aboutus'"
+                type="submit "
+              >
+                Login
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
